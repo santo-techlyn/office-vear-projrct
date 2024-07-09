@@ -120,6 +120,20 @@ nav {
   display: flex !important;
   justify-content: flex-end;
 }
+nav .main-menu .menu-btn {
+  padding: 16px 32px;
+  background-image: linear-gradient(90deg, #36D1DC -37.78%, #5B86E5 100%);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border: 3px solid transparent;
+}
+nav .main-menu .menu-btn:hover {
+  background-image: linear-gradient(to right, rgba(25, 128, 250, 0.5019607843), #1980FA);
+  border: 3px solid rgb(0, 225, 255);
+  transition: all 0.3s ease-in;
+  color: #ffffff;
+}
 nav .main-menu li {
   display: inline-block;
   position: relative;
@@ -444,7 +458,7 @@ nav .main-menu li a::before {
 
 /* animation */
 .item-rotate {
-  animation: rotate 9s normal linear infinite;
+  animation: rotate 2s normal linear infinite;
 }
 
 @keyframes rotate {
@@ -696,18 +710,20 @@ form input::placeholder {
   font-weight: 500;
 }
 form .btn {
-  color: #ffffff;
-}
-form .btn:hover {
-  color: red;
-}
-form button {
   padding: 15px 32px;
   background-image: linear-gradient(90deg, #36D1DC -37.78%, #5B86E5 100%);
   font-size: 18px;
   font-weight: 600;
   border-radius: 0;
   margin-top: 47px;
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+form .btn:hover {
+  background-image: radial-gradient(transparent, transparent);
+  border: 2px solid #1980FA;
+  transition: all 0.3s ease-in;
+  color: #ffffff;
 }
 
 /* preloader */
@@ -1461,6 +1477,14 @@ form button {
   border: 0;
   display: inline-block;
   color: #ffffff;
+  font-weight: 500;
+  border: 2px solid transparent;
+}
+.single-protfolio-part .single-protfolio-content .single-protfolio-btn:hover {
+  background-image: linear-gradient(to right, transparent, transparent);
+  border: 2px solid rgb(0, 225, 255);
+  transition: all 0.3s ease-in;
+  color: #112200;
 }
 .single-protfolio-part .single-protfolio-content .protfolio-link h6 {
   color: #112200;
@@ -1659,10 +1683,14 @@ form button {
   position: absolute;
   top: 20px;
   left: 20px;
-  border: 0;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
+  border: 2px solid transparent;
+}
+.single-card .card-head .card-btn:hover {
+  border: 2px solid #1980FA;
+  transition: all 0.3s ease-in;
 }
 .single-card .card-body {
   margin-top: 30px;

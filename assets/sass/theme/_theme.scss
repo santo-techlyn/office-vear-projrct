@@ -306,6 +306,15 @@
             border: 0;
             display: inline-block;
             color: $white-color;
+            font-weight: 500;
+            border: 2px solid transparent;
+
+            &:hover {
+                background-image: linear-gradient(to right, transparent, transparent);
+                border: 2px solid $btn-border-color;
+                transition: $transition;
+                color: $paragraph-color;
+            }
         }
 
         .protfolio-link {
@@ -534,10 +543,15 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            border: 0;
             color: $white-color;
             font-size: 16px;
             font-weight: 600;
+            border: 2px solid transparent;
+
+            &:hover {
+                border: 2px solid $primary-color;
+                transition: $transition;
+            }
         }
     }
 

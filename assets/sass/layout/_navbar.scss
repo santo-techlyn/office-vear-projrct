@@ -1,10 +1,25 @@
 /* navbar */
 nav {
-    display: flex !important;  
+    display: flex !important;
     justify-content: flex-end;
 
     // home menu
     .main-menu {
+        .menu-btn {
+            padding: 16px 32px;
+            background-image: $gradient-color;
+            color: $white-color;    
+            font-size: 18px;
+            font-weight: 600;
+            border: 3px solid transparent;
+            &:hover {
+                background-image: linear-gradient(to right, $primary-color-opacity, $primary-color);
+                border: 3px solid $btn-border-color;
+                transition: $transition;
+                color: $white-color;
+            }
+        }
+
         li {
             display: inline-block;
             position: relative;
@@ -163,7 +178,6 @@ nav {
 
             @include portrait-phone {
                 top: 7px;
-
             }
         }
     }
