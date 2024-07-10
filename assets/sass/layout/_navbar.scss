@@ -5,20 +5,6 @@ nav {
 
     // home menu
     .main-menu {
-        .menu-btn {
-            padding: 16px 32px;
-            background-image: $gradient-color;
-            color: $white-color;    
-            font-size: 18px;
-            font-weight: 600;
-            border: 3px solid transparent;
-            &:hover {
-                background-image: linear-gradient(to right, $primary-color-opacity, $primary-color);
-                border: 3px solid $btn-border-color;
-                transition: $transition;
-                color: $white-color;
-            }
-        }
 
         li {
             display: inline-block;
@@ -173,13 +159,30 @@ nav {
             }
 
             @include landscape-phone {
-                top: 2px;
+                top: 20px;
             }
 
             @include portrait-phone {
-                top: 7px;
+                top: 30px;
+            }
+            @include screen-360 {
+                top: 18px;
             }
         }
     }
 
+}
+
+.nav-right-btn {
+    .primary-btn{
+        @include desktop{
+            font-size: 10px;
+        }
+        @include tablet{
+            display: none;
+        }
+        @include all-phone{
+            display: none;
+        }
+    }
 }

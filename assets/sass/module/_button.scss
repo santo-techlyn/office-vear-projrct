@@ -1,18 +1,14 @@
 /* button */
 .primary-btn {
-    color: $white-color;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: capitalize;
-    text-align: center;
+    padding: 16px 32px;
     display: inline-block;
-    padding: 14px 40px;
-    background-color: $paragraph-color;
+    background-image: $gradient-color;
+    color: $white-color;    
+    font-size: 16px;
+    font-weight: 600;
     transition: $transition;
-    border-radius: 5px;
-
     &:hover {
         color: $white-color;
-        background-color: $primary-color;
+        opacity: .9;
     }
 }

@@ -37,11 +37,12 @@
         margin-bottom: 50px;
     }
 }
-
-
-
-
 form {
+    .primary-btn{
+        font-size: 18px;
+        border: 0;
+        margin-top: 60px;
+    }
     textarea {
         background-color: transparent;
         border: 0;
@@ -67,24 +68,6 @@ form {
             color: $white-color;
             font-size: 16px;
             font-weight: 500;
-        }
-    }
-
-    .btn {
-        padding: 15px 32px;
-        background-image: $gradient-color;
-        font-size: 18px;
-        font-weight: 600;
-        border-radius: 0;
-        margin-top: 47px;
-        border: 2px solid transparent;
-        color: $white-color;
-
-        &:hover {
-            background-image: radial-gradient(transparent, transparent, );
-            border: 2px solid $primary-color;
-            transition: $transition;
-            color: $white-color;
         }
     }
 }

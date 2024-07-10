@@ -443,23 +443,6 @@
             margin-top: 15px;
         }
 
-        .single-protfolio-btn {
-            padding: 5px 18px;
-            background-image: $gradient-color;
-            border: 0;
-            display: inline-block;
-            color: $white-color;
-            font-weight: 500;
-            border: 2px solid transparent;
-
-            &:hover {
-                background-image: linear-gradient(to right, transparent, transparent);
-                border: 2px solid $btn-border-color;
-                transition: $transition;
-                color: $paragraph-color;
-            }
-        }
-
         .protfolio-link {
             h6 {
                 color: $paragraph-color;
@@ -472,6 +455,11 @@
             }
         }
 
+    }
+
+    .primary-btn {
+        font-size: 14px;
+        padding: 5px 18px;
     }
 }
 
@@ -532,7 +520,6 @@
 
 //testimonial style
 .testimonial-section {
-
     .testimonial-img {
         position: relative;
 
@@ -567,7 +554,6 @@
                     color: $primary-color;
                 }
             }
-
         }
 
         .counter2 {
@@ -601,8 +587,6 @@
                     color: $primary-color;
                 }
             }
-
-
         }
     }
 }
@@ -658,7 +642,7 @@
 //end testimonial style
 
 // blog section style
-.single-card {
+.single-blog {
     font-family: "Poppins", sans-serif;
     width: 95%;
     border: 0;
@@ -673,28 +657,17 @@
         margin-bottom: 50px;
     }
 
-    .card-head {
+    .blog-img {
         position: relative;
 
-        .card-btn {
-            padding: 10px 18px;
-            background-image: $gradient-color;
+        .blog-btn {
             position: absolute;
             top: 20px;
             left: 20px;
-            color: $white-color;
-            font-size: 16px;
-            font-weight: 600;
-            border: 2px solid transparent;
-
-            &:hover {
-                border: 2px solid $primary-color;
-                transition: $transition;
-            }
         }
     }
 
-    .card-body {
+    .blog-content {
         margin-top: 30px;
         padding: 0;
 
@@ -702,13 +675,13 @@
             text-decoration: none;
         }
 
-        .card-title {
+        .blog-title {
             &:hover {
                 color: $primary-color;
             }
         }
 
-        .card-date {
+        .blog-date {
             text-decoration: none;
 
             span {
@@ -723,7 +696,7 @@
 
         }
 
-        .card-text {
+        .blog-text {
             border-top: 1px solid $paragraph-color;
         }
 
@@ -737,6 +710,11 @@
                 transition: $transition;
             }
         }
+    }
+
+    .primary-btn {
+        font-size: 14px;
+        padding: 12px 20px;
     }
 }
 

@@ -120,20 +120,6 @@ nav {
   display: flex !important;
   justify-content: flex-end;
 }
-nav .main-menu .menu-btn {
-  padding: 16px 32px;
-  background-image: linear-gradient(90deg, #36D1DC -37.78%, #5B86E5 100%);
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 600;
-  border: 3px solid transparent;
-}
-nav .main-menu .menu-btn:hover {
-  background-image: linear-gradient(to right, rgba(25, 128, 250, 0.5019607843), #1980FA);
-  border: 3px solid rgb(0, 225, 255);
-  transition: all 0.3s ease-in;
-  color: #ffffff;
-}
 nav .main-menu li {
   display: inline-block;
   position: relative;
@@ -274,12 +260,33 @@ nav .main-menu li a::before {
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .mean-container .mean-bar a.meanmenu-reveal {
-    top: 2px;
+    top: 20px;
   }
 }
 @media (max-width: 575.98px) {
   .mean-container .mean-bar a.meanmenu-reveal {
-    top: 7px;
+    top: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .mean-container .mean-bar a.meanmenu-reveal {
+    top: 18px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-right-btn .primary-btn {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav-right-btn .primary-btn {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .nav-right-btn .primary-btn {
+    display: none;
   }
 }
 
@@ -616,20 +623,17 @@ nav .main-menu li a::before {
 
 /* button */
 .primary-btn {
+  padding: 16px 32px;
+  display: inline-block;
+  background-image: linear-gradient(90deg, #36D1DC -37.78%, #5B86E5 100%);
   color: #ffffff;
   font-size: 16px;
-  font-weight: 500;
-  text-transform: capitalize;
-  text-align: center;
-  display: inline-block;
-  padding: 14px 40px;
-  background-color: #112200;
+  font-weight: 600;
   transition: all 0.3s ease-in;
-  border-radius: 5px;
 }
 .primary-btn:hover {
   color: #ffffff;
-  background-color: #1980FA;
+  opacity: 0.9;
 }
 
 /* form */
@@ -675,6 +679,11 @@ nav .main-menu li a::before {
   margin-bottom: 50px;
 }
 
+form .primary-btn {
+  font-size: 18px;
+  border: 0;
+  margin-top: 60px;
+}
 form textarea {
   background-color: transparent;
   border: 0;
@@ -708,22 +717,6 @@ form input::placeholder {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
-}
-form .btn {
-  padding: 15px 32px;
-  background-image: linear-gradient(90deg, #36D1DC -37.78%, #5B86E5 100%);
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 0;
-  margin-top: 47px;
-  border: 2px solid transparent;
-  color: #ffffff;
-}
-form .btn:hover {
-  background-image: radial-gradient(transparent, transparent);
-  border: 2px solid #1980FA;
-  transition: all 0.3s ease-in;
-  color: #ffffff;
 }
 
 /* preloader */
@@ -1628,21 +1621,6 @@ form .btn:hover {
     margin-top: 15px;
   }
 }
-.single-protfolio-part .single-protfolio-content .single-protfolio-btn {
-  padding: 5px 18px;
-  background-image: linear-gradient(90deg, #36D1DC -37.78%, #5B86E5 100%);
-  border: 0;
-  display: inline-block;
-  color: #ffffff;
-  font-weight: 500;
-  border: 2px solid transparent;
-}
-.single-protfolio-part .single-protfolio-content .single-protfolio-btn:hover {
-  background-image: linear-gradient(to right, transparent, transparent);
-  border: 2px solid rgb(0, 225, 255);
-  transition: all 0.3s ease-in;
-  color: #112200;
-}
 .single-protfolio-part .single-protfolio-content .protfolio-link h6 {
   color: #112200;
 }
@@ -1650,6 +1628,10 @@ form .btn:hover {
   color: #1980FA;
   transition: all 0.3s ease-in;
   cursor: pointer;
+}
+.single-protfolio-part .primary-btn {
+  font-size: 14px;
+  padding: 5px 18px;
 }
 
 .experience-section .expreance-year h4 {
@@ -1809,7 +1791,7 @@ form .btn:hover {
   color: #DD963C;
 }
 
-.single-card {
+.single-blog {
   font-family: "Poppins", sans-serif;
   width: 95%;
   border: 0;
@@ -1817,65 +1799,59 @@ form .btn:hover {
   background-color: #ffffff;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .single-card {
+  .single-blog {
     margin-bottom: 80px;
   }
 }
 @media (max-width: 767.98px) {
-  .single-card {
+  .single-blog {
     margin-bottom: 50px;
   }
 }
-.single-card .card-head {
+.single-blog .blog-img {
   position: relative;
 }
-.single-card .card-head .card-btn {
-  padding: 10px 18px;
-  background-image: linear-gradient(90deg, #36D1DC -37.78%, #5B86E5 100%);
+.single-blog .blog-img .blog-btn {
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
-  border: 2px solid transparent;
 }
-.single-card .card-head .card-btn:hover {
-  border: 2px solid #1980FA;
-  transition: all 0.3s ease-in;
-}
-.single-card .card-body {
+.single-blog .blog-content {
   margin-top: 30px;
   padding: 0;
 }
-.single-card .card-body .title-link {
+.single-blog .blog-content .title-link {
   text-decoration: none;
 }
-.single-card .card-body .card-title:hover {
+.single-blog .blog-content .blog-title:hover {
   color: #1980FA;
 }
-.single-card .card-body .card-date {
+.single-blog .blog-content .blog-date {
   text-decoration: none;
 }
-.single-card .card-body .card-date span {
+.single-blog .blog-content .blog-date span {
   color: #1980FA;
   transition: all 0.3s ease-in;
   font-weight: 500;
 }
-.single-card .card-body .card-date span:hover {
+.single-blog .blog-content .blog-date span:hover {
   text-decoration: underline;
 }
-.single-card .card-body .card-text {
+.single-blog .blog-content .blog-text {
   border-top: 1px solid #112200;
 }
-.single-card .card-body .read-more {
+.single-blog .blog-content .read-more {
   color: #1980FA;
   text-decoration: none;
   font-weight: 600;
 }
-.single-card .card-body .read-more:hover {
+.single-blog .blog-content .read-more:hover {
   text-decoration: underline;
   transition: all 0.3s ease-in;
+}
+.single-blog .primary-btn {
+  font-size: 14px;
+  padding: 12px 20px;
 }
 
 .map-section {
