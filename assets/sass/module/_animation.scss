@@ -63,16 +63,16 @@
 
 @keyframes ripple {
     0% {
-        box-shadow: 0 0 0 0 rgba(244, 111, 5, 0.2), 0 0 0 20px rgba(244, 111, 5, 0.2), 0 0 0 40px rgba(244, 111, 5, 0.2)
+        box-shadow: 0 0 0 0 rgba(5, 208, 244, 0.2), 0 0 0 5px rgba(5, 216, 244, 0.2), 0 0 0 10px rgba(5, 208, 244, 0.2)
     }
 
     100% {
-        box-shadow: 0 0 0 20px rgba(244, 111, 5, 0.2), 0 0 0 40px rgba(244, 111, 5, 0.1), 0 0 0 60px rgba(244, 111, 5, 0)
+        box-shadow: 0 0 0 5px rgba(5, 89, 244, 0.2), 0 0 0 10px rgba(5, 89, 244, 0.1), 0 0 0 20px rgba(5, 21, 244, 0)
     }
 }
 
 .item-moveOne {
-    animation: moveOne 15s infinite ease-in-out;
+    animation: moveOne 5s infinite ease-in-out;
 }
 
 @-webkit-keyframes moveOne {
@@ -155,9 +155,11 @@
     0% {
         bottom: 60px;
     }
+
     50% {
         bottom: 70px;
     }
+
     100% {
         bottom: 60px;
     }
@@ -167,16 +169,18 @@
     0% {
         bottom: 60px;
     }
+
     50% {
         bottom: 70px;
     }
+
     100% {
         bottom: 60px;
     }
 }
 
 .item-upDown {
-    animation: upDown 12s infinite ease-in-out;
+    animation: upDown 6s infinite ease-in-out;
 }
 
 @-webkit-keyframes upDown {
@@ -218,11 +222,21 @@
 }
 
 @-webkit-keyframes pulse_shadow {
-    0% { box-shadow: 0px 0px 0px 0px rgba(255, 255, 0,0.25); }
-    100% {box-shadow: 0px 0px 3px 15px rgba(255, 255, 0,0.0); }
+    0% {
+        box-shadow: 0px 0px 0px 0px rgba(43, 149, 248, 0.637);
+    }
+
+    100% {
+        box-shadow: 0px 0px 3px 30px rgba(255, 255, 0, 0.0);
+    }
 }
 
 @keyframes pulse_shadow {
-    0% { box-shadow: 0px 0px 0px 0px rgba(255, 255, 0,0.25); }
-    100% {box-shadow: 0px 0px 3px 15px rgba(255, 255, 0,0.0); }
+    0% {
+        box-shadow: 0px 0px 0px 0px rgba(75, 224, 250, 0.452);
+    }
+
+    100% {
+        box-shadow: 0px 5px 10px 30px rgba(255, 255, 0, 0.0);
+    }
 }

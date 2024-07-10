@@ -17,6 +17,149 @@
     padding: 300px 0 350px;
     position: relative;
 
+    .hero-vector2 {
+        position: absolute;
+        height: 535px;
+        width: 570px;
+        right: 10%;
+        top: 25%;
+
+        @include screen-1400 {
+            height: 400px;
+            width: 400px;
+            top: 30%;
+            right: 10%;
+        }
+
+        @include screen-1200 {
+            height: 400px;
+            width: 400px;
+            top: 30%;
+            right: 5%;
+        }
+
+        @include desktop {
+            height: 300px;
+            width: 300px;
+            top: 30%;
+            right: 5%;
+        }
+
+        @include tablet {
+            height: 200px;
+            width: 200px;
+            top: 25%;
+            right: 5%;
+        }
+
+        @include all-phone {
+            height: 200px;
+            width: 200px;
+            top: 35%;
+            right: 1%;
+        }
+    }
+
+    .hero-vector3 {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        left: 10%;
+        top: 60%;
+
+        @include screen-1400 {
+            height: 150px;
+            width: 150px;
+            top: 60%;
+            left: 10%;
+        }
+
+        @include screen-1200 {
+            height: 150px;
+            width: 150px;
+            top: 60%;
+            left: 10%;
+        }
+
+        @include desktop {
+            height: 150px;
+            width: 150px;
+            top: 60%;
+            left: 5%;
+        }
+
+        @include tablet {
+            height: 150px;
+            width: 150px;
+            top: 60%;
+            left: 5%;
+        }
+
+        @include all-phone {
+            height: 120px;
+            width: 120px;
+            top: 60%;
+            left: 5%;
+        }
+
+        @include screen-360 {
+            height: 100px;
+            width: 100px;
+            top: 70%;
+            left: 0%;
+        }
+    }
+
+    .hero-vector4 {
+        position: absolute;
+        height: 80px;
+        width: 85px;
+        left: 25%;
+        top: 20%;
+
+        @include screen-1400 {
+            height: 80px;
+            width: 85px;
+            top: 30%;
+            left: 19%;
+        }
+
+        @include screen-1200 {
+            height: 80px;
+            width: 85px;
+            top: 30%;
+            left: 20%;
+        }
+
+        @include desktop {
+            height: 80px;
+            width: 85px;
+            top: 30%;
+            left: 5%;
+        }
+
+        @include tablet {
+            height: 80px;
+            width: 85px;
+            top: 20%;
+            left: 7%;
+        }
+
+        @include all-phone {
+            height: 80px;
+            width: 85px;
+            top: 20%;
+            left: 7%;
+        }
+
+        @include screen-360 {
+            height: 80px;
+            width: 85px;
+            top: 10%;
+            left: 0%;
+        }
+    }
+
     @include tablet {
         padding: 200px 0 350px;
     }
@@ -526,11 +669,7 @@
         margin-bottom: 80px;
     }
 
-    @include screen-360 {
-        margin-bottom: 50px;
-    }
-
-    @include landscape-phone {
+    @include all-phone {
         margin-bottom: 50px;
     }
 
@@ -598,14 +737,6 @@
                 transition: $transition;
             }
         }
-    }
-}
-
-.blog-section {
-    position: relative;
-
-    @include tablet {
-        padding-bottom: 0;
     }
 }
 
